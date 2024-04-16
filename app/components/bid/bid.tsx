@@ -5,7 +5,7 @@ import Avatar from "./images/Avatar.svg";
 import Image from "next/image";
 
 const Bid = ({ displayMode }: { displayMode: string }) => {
-  const panel = () => {
+  const Panel = () => {
     return (
       <div className="checkbox">
         <input type="checkbox" />
@@ -89,3 +89,5 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
     </main>
   );
 };
+
+export default Bid;

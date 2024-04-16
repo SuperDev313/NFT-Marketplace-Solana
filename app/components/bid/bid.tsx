@@ -5,6 +5,40 @@ import Avatar from "./images/Avatar.svg";
 import Image from "next/image";
 
 const Bid = ({ displayMode }: { displayMode: string }) => {
+  const Panel = () => {
+    return (
+      <div className="checkbox">
+        <input type="checkbox" />
+        <div className="nft--container">
+          <Image id="nft" src={NFT} alt="nft" />
+          <div className="nft--details">
+            <div id="name">Cute Cube Cool</div>
+            <div>John Abraham</div>
+          </div>
+        </div>
+        <div>20.50 SOL</div>
+        <div>20.50 SOL</div>
+        <div className="offer-container">
+          <Image src={Avatar} alt="user" />
+          <div>20.50 SOL</div>
+        </div>
+        <div>2 Hours 1 Min 30s</div>
+        <div id="X">X</div>
+      </div>
+    );
+  };
+
+  let bidClass;
+  let panelClass: string;
+
+  if (displayMode === "dark") {
+    bidClass = "bids--container";
+    panelClass = "activity--panel";
+  } else {
+    bidClass = "bids--container-lm";
+    panelClass = "activity--panel-lm";
+  }
+
   return (
     <main className={bidClass}>
       <div>
@@ -55,3 +89,5 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
     </main>
   );
 };
+
+export default Bid;

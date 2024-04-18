@@ -1,0 +1,117 @@
+.bids--container {
+    display: flex;
+    flex-direction: column;
+
+    color: #FFFFFF;
+
+    height: 78rem;
+    width: 76.25rem;
+}
+
+.bids--container-lm {
+    display: flex;
+    flex-direction: column;
+
+    color: #000;
+
+    height: 78rem;
+    width: 76.25rem;
+}
+
+.label--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#label {
+    display: flex;
+    gap: 10px;    
+}
+
+#home, #bids {
+    color: #6C7AA0;
+}
+
+.activity--container-label {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.125rem 0;
+}
+
+.activity--container {
+    width: 76.25rem;
+}
+
+.activity--label, .activity--panel, .activity--panel-lm {
+    display: grid;
+    grid-template-columns: .5fr 1.25fr .75fr .75fr 1fr 1fr .5fr;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.activity--label input, .activity--panel input, .activity--panel-lm input {
+    width: .75rem;
+    height: .75rem;
+}
+
+.activity--div {
+    width: 76.25rem;
+    border: 0.3px solid #6C7AA0;
+    margin-top: .688rem;
+    margin-bottom: 1.875rem;
+}
+
+.activity--label {
+    width: 75rem;
+    padding: 0 .75rem;
+}
+
+.activity--panel {
+    background: #1D1932;
+    border-radius: 18px;
+    padding: .5rem .75rem;
+}
+
+.activity--panel-lm {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: .5rem .75rem;
+}
+
+.panel--container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.nft--container {
+    display: flex;
+    gap: .625rem;
+}
+
+#nft {
+    width: 4rem;
+    height: 2.75rem;
+    border-radius: 19px;
+}
+
+.nft--details #name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.offer-container {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+#X {
+    display: flex;
+    justify-content: center;
+}
+
+.activity--panel #X {
+    cursor: pointer;
+}

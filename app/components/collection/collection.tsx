@@ -9,25 +9,28 @@ const Collection = ({ displayMode }: { displayMode: string }) => {
   } else {
     collectionContainerClass = "collection--container-lm";
   }
+
   return (
     <main className={collectionContainerClass}>
       <div>
         <h1>Collections</h1>
-        <div className="lable--container">
+        <div className="label--container">
           <div>Welcome to your Collection</div>
-          <div id="lable">
+          <div id="label">
             <div id="home">Home</div>
-            <div>{``}</div>
-            <div id="collection"> Collection</div>
+            <div>{`>`}</div>
+            <div id="collections">Collections</div>
           </div>
         </div>
         <div id="selector">
-            <div id="selected" className="selector--item">All</div>
-            <div className="selector--item">Artwork</div>
-            <div className="selector--item">Music</div>
+          <div id="selected" className="selector--item">
+            All
+          </div>
+          <div className="selector--item">Artwork</div>
+          <div className="selector--item">Music</div>
         </div>
       </div>
-      <Trending displayMode={displayMode}/>
+      <Trending displayMode={displayMode} />
     </main>
   );
 };

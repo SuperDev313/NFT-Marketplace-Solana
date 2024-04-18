@@ -1,0 +1,76 @@
+.card--container {
+    display: flex;
+    flex-direction: column;
+    background: #1D1932;
+    border-radius: 18px;
+    padding: 1.25rem;
+    width: 15.125rem;
+    height: 24.5rem;
+}
+
+.card--container-lm {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    color: #000;
+
+    border-radius: 18px;
+    padding: 1.25rem;
+    width: 15.125rem;
+    height: 24.5rem;
+}
+
+button {
+    align-self: center;
+    background: #6F4FF2;
+    border-radius: 9px;
+    height: 2.5rem;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#bid--button {
+    width: 90%;
+}
+
+#title {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    white-space:nowrap;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.info--container {
+    display: flex;
+    flex-direction: column;
+    gap: .688rem;
+    margin-bottom: .313rem;
+    font-size: 14px;
+}
+
+#bid {
+    display: flex;
+    justify-content: right;
+    color: #6F4FF2;
+}
+
+.info, .vals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vals {
+    margin-bottom: 1.25rem;
+    color: #6C7AA0;
+    font-size: 16px;
+}

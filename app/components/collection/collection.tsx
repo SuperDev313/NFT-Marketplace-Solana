@@ -1,7 +1,35 @@
-import Trending from "./trending/trending";
+import "./collection.css";
+import Trending from "../trending/trending";
 
 const Collection = ({ displayMode }: { displayMode: string }) => {
-  return <main className={collectionContainerClass}></main>;
+  let collectionContainerClass;
+
+  if (displayMode === "dark") {
+    collectionContainerClass = "collection--container";
+  } else {
+    collectionContainerClass = "collection--container-lm";
+  }
+  return (
+    <main className={collectionContainerClass}>
+      <div>
+        <h1>Collections</h1>
+        <div className="lable--container">
+          <div>Welcome to your Collection</div>
+          <div id="lable">
+            <div id="home">Home</div>
+            <div>{``}</div>
+            <div id="collection"> Collection</div>
+          </div>
+        </div>
+        <div id="selector">
+            <div id="selected" className="selector--item">All</div>
+            <div className="selector--item">Artwork</div>
+            <div className="selector--item">Music</div>
+        </div>
+      </div>
+      <Trending displayMode={displayMode}/>
+    </main>
+  );
 };
 
 export default Collection;

@@ -1,6 +1,7 @@
-import "./card.css";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
+import "./card.css";
 import NFT from "./images/NFT.svg";
+
 import Image from "next/image";
 
 const Card = ({
@@ -16,16 +17,25 @@ const Card = ({
 }) => {
   let cardContainerClass;
 
-  if (displayMode == "dark") {
+  if (displayMode === "dark") {
     cardContainerClass = "card--container";
   } else {
     cardContainerClass = "card--container-lm";
   }
+
   return (
     <div className={cardContainerClass}>
-      <div className="self-center round-lg h-150px w-150px">
+      <div
+        className="
+                self-center
+                rounded-lg
+                h-150px
+                w-150px
+            "
+      >
         <Image width={125} height={125} src={image ? image : NFT} alt="nft" />
       </div>
+      <div id="title">{title || "Liquid Wave"}</div>
       <div className="info--container">
         <div className="info">
           <div>Auction Time</div>
@@ -37,7 +47,7 @@ const Card = ({
         <div>3h 1m 50s</div>
         <div>{Number(floor_price) / LAMPORTS_PER_SOL || "20"} SOL</div>
       </div>
-      <button id="bid-button">Place a Bid</button>
+      <button id="bid--button">Place a Bid</button>
     </div>
   );
 };

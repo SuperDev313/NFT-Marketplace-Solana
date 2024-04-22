@@ -1,0 +1,32 @@
+.header--container {
+    display: flex;
+    width: 76.25rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.875rem 4.375rem 3.125rem 4.375rem;
+}
+
+.header--container img {
+    cursor: pointer;
+}
+
+#search {
+    background: #1D1932;
+    border-radius: 12px;    
+    width: 23.75rem;
+    height: 3.125rem;
+    padding: .625rem;
+}
+
+#search-lm {
+    background: #FFFFFF;
+    border-radius: 12px;    
+    width: 23.75rem;
+    height: 3.125rem;
+    padding: .625rem;
+}
+
+.img--container {
+    display: flex;
+    gap: 1rem;
+}

@@ -1,6 +1,4 @@
-import "./header.css"
-
-import Image from "next/image";
+import "./header.css";
 
 import Display from "./images/darkDisplay.svg";
 import lmDisplay from "./images/lightDisplay.svg";
@@ -11,6 +9,8 @@ import {
   WalletDisconnectButton,
   WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
+
+import Image from "next/image";
 
 const Header = ({
   displayMode,
@@ -45,7 +45,7 @@ const Header = ({
       <input id={searchId} type="search" placeholder="Search..." />
       <div className="img--container">
         <Image onClick={handleClick} src={displayIcon} alt="display" />
-        <Image src={Notifications} alt="notifis" />
+        <Image src={Notifications} alt="notifs" />
         <Image src={Avatar} alt="user" />
         <WalletMultiButton />
         <WalletDisconnectButton />

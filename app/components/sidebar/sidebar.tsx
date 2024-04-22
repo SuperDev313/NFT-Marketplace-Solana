@@ -1,3 +1,4 @@
+import "./sidebar.css";
 import Logo from "./images/Logo.svg";
 import Dashboard from "./images/DashBoard.svg";
 import Bid from "./images/Bid.svg";

@@ -1,3 +1,5 @@
+import "./header.css"
+
 import Image from "next/image";
 
 import Display from "./images/darkDisplay.svg";

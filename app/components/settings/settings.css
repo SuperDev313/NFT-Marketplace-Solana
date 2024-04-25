@@ -1,0 +1,147 @@
+.settings--container {
+    color: #FFFFFF;
+}
+
+.settings--container-lm {
+    color: #000;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+}
+
+.settings#selector {
+    margin: 1.875rem 0 3.125rem 0;
+}
+
+
+.settings #selected {
+    color: #6F4FF2;
+    background: none;
+}
+
+#label {
+    margin-bottom: 1.25rem;
+}
+
+.user-update--container {
+    display: flex;
+    gap: 2.813rem;
+    margin-bottom: 3.125rem;
+}
+
+.update-profile, .user-info {
+    background: #1D1932;
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.update-profile-lm, .user-info-lm {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.update-profile input, .user-info input {
+    background: #131129;
+    border-radius: 8px;
+    width: 33.25rem;
+    height: 2.5rem;
+}
+
+.update-profile-lm input, .user-info-lm input {
+    border-color: #131129;
+    border-width: 1px;
+    width: 33.25rem;
+    height: 2.5rem;
+    border-radius: 8px;
+}
+
+.user-info input, .user-info-lm input {
+    margin-top: .625rem;
+    margin-bottom: 1.25rem;
+}
+
+.user-info button, .user-info-lm button {
+    margin-top: 1.25rem;
+}
+
+.update-profile input, .update-profile-lm input {
+    margin-top: .625rem;
+    margin-bottom: .625rem;
+}
+
+.update-profile button, .update-profile-lm button {
+    margin-top: .313rem;
+}
+
+.pfp-container {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.personal--info .info--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 1.75rem;
+    background: #1D1932;
+    border-radius: 12px;
+    width: 74.313rem;
+    height: 19.5rem;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    gap: 0;
+}
+
+.personal--info-lm .info--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 1.75rem;
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 74.313rem;
+    height: 19.5rem;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    gap: 0;
+}
+
+.personal--info .info--container input {
+    width: 35rem;
+    height: 2.5rem;
+    background: #131129;
+    border-radius: 8px;
+}
+
+.personal--info-lm .info--container input {
+    width: 35rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    border-color: #131129;
+    border-width: 1px;
+}
+
+.personal--info button, .personal--info-lm button {
+    margin-top: 1rem;
+}
+
+.settings--container button {
+    width: 5.75rem;
+}
+
+.settings--container-lm button {
+    width: 5.75rem;
+}
+
+#info {
+    width: 35rem;
+    height: 4.375rem;
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}

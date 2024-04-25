@@ -1,3 +1,6 @@
+import "./settings.css"
+import pfp from "../header/images/Avatar.svg"
+
 import Image from "next/image";
 
 const Settings = ({ displayMode }: { displayMode: string }) => {

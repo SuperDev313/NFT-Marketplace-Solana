@@ -37,6 +37,37 @@ const Settings = ({ displayMode }: { displayMode: string }) => {
         <div className="selector--item">Payment Method</div>
         <div className="selector--item">API</div>
       </div>
+      <div className="user-update--container">
+        <div className="user--container">
+          <h4 id="label">User profile</h4>
+          <div className={userInfoClass}>
+            <div>
+              <div>Full name</div>
+              <input />
+              <div className="pfp-container">
+                <Image src={pfp} alt="pfp" />
+                <div id="user">
+                  <h5>Jane Doe</h5>
+                  <div>Welcome to the settings page</div>
+                </div>
+              </div>
+              <button>Save</button>
+            </div>
+          </div>
+        </div>
+        <div className="profile--container">
+          <h4 id="label">Update profile</h4>
+          <div className={updateProfileClass}>
+            <div>
+              <div>Email</div>
+              <input />
+              <div>Password</div>
+              <input />
+            </div>
+            <button>Save</button>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };

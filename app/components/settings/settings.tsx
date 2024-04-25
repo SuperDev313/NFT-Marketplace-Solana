@@ -68,6 +68,37 @@ const Settings = ({ displayMode }: { displayMode: string }) => {
           </div>
         </div>
       </div>
+      <div className={personalInfoClass}>
+        <h4>Personal Information</h4>
+        <div className="info--container">
+          <div id="info">
+            <div>Info</div>
+            <input />
+          </div>
+          <div id="info">
+            <div>Info</div>
+            <input />
+          </div>
+          <div id="info">
+            <div>Info</div>
+            <input />
+          </div>
+          <div id="info">
+            <div>Info</div>
+            <input />
+          </div>
+          <div id="info">
+            <div>Info</div>
+            <input />
+          </div>
+          <div id="info">
+            <div>Info</div>
+            <input />
+          </div>
+
+          <button>Save</button>
+        </div>
+      </div>
     </main>
   );
 };

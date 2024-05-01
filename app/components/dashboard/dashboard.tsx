@@ -67,6 +67,7 @@ const Dashboard = ({
           <div className="selector--item">Music</div>
         </div>
       </div>
+      <Trending displayMode={displayMode} data={data} />
     </main>
   );
 };

@@ -17,6 +17,23 @@ const Marketplace: NextPage = () => {
   const [displayMode, setDisplayMode] = useState("dark");
   const [data, setData] = useState<nftData>(null);
 
+  useEffect(() => {
+    const fetchNfts = async () => {
+      const res = await fetch("/api/nftData");
+      const data = await res.json();
+      setData(data.data);
+    };
+
+    fetchNfts().catch(console.error);
+  }, []);
+
+  let containerClass;
+  if (displayMode === "dart") {
+    containerClass = "App";
+  } else {
+    containerClass = "App-lm";
+  }
+
   return (
     <div className={containerClass}>
       <Sidebar

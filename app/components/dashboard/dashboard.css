@@ -139,3 +139,63 @@ button {
 .ft--container .vals {
     margin-bottom: 1rem;
 }
+
+
+.button--container {
+    display: flex;
+    gap: 1.25rem;
+    height: 2.5rem;
+}
+
+button#place-bid, button#details {
+    border-radius: 9px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+button#place-bid {
+    background: #6F4FF2;
+}
+
+button#details {
+    background: #DC3546;
+}
+
+.label {
+    height: 1.3rem;
+    display: flex;
+}
+
+#selector {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+    font-size: 14px;
+}
+
+#selected {
+    background: #6F4FF2;
+    color: #FFFFFF;
+    border-radius: 14px;
+    height: 1.313rem;
+    width: 2.813rem;
+}
+
+.selector--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.trending {
+    margin-top: 2rem;
+    height: 37.313rem;
+    display: grid;
+    gap: 1.875rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-y: auto;
+}

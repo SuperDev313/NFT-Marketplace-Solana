@@ -25,10 +25,21 @@ const Marketplace: NextPage = () => {
         displayMode={displayMode}
       >
         <div className="container">
-          <Header
-            displayMode={displayMode}
-            setDisplayMode={setDisplayMode}
-          ></Header>
+          <Header displayMode={displayMode} setDisplayMode={setDisplayMode}>
+            {selectedComponent === "Dashboard" && (
+              <Dashboard displayMode={displayMode} data={data} />
+            )}
+            {selectedComponent === "Bid" && <Bid displayMode={displayMode} />}
+            {selectedComponent === "Collection" && (
+              <Collection displayMode={displayMode} />
+            )}
+            {selectedComponent === "Profile" && (
+              <Profile displayMode={displayMode} />
+            )}
+            {selectedComponent === "Settings" && (
+              <Settings displayMode={displayMode} />
+            )}
+          </Header>
         </div>
       </Sidebar>
     </div>

@@ -1,0 +1,43 @@
+button {
+    cursor: pointer;
+}
+
+.cont--container {
+    display: flex;
+    flex-direction: column;
+    height: 78rem;
+    width: 76.25rem;
+    color: #FFFFFF;
+}
+
+.cont--container-lm {
+    display: flex;
+    flex-direction: column;
+    height: 78rem;
+    width: 76.25rem;
+    color: #000;
+}
+
+.discover--container, .trending, .label {
+    width: 76.25rem;
+}
+
+.discover--container {
+    display: flex;
+    height: 14.25rem;
+    gap: 1.875rem;
+    margin-bottom: 4.313rem;
+}
+
+#explore {
+    border-radius: 18px;        
+}
+
+.discover {
+    padding: 1.875rem 1.875rem 1.375rem 1.875rem;
+    background-image: url("./images/Discover.svg");
+}
+
+.discover#explore {
+    border-radius: 21px;
+}

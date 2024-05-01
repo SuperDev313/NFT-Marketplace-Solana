@@ -1,4 +1,5 @@
 "use client";
+
 import Sidebar from "./components/sidebar/sidebar";
 import Header from "./components/header/header";
 import Dashboard from "./components/dashboard/dashboard";
@@ -7,8 +8,8 @@ import Collection from "./components/collection/collection";
 import Profile from "./components/profile/profile";
 import Settings from "./components/settings/settings";
 
+import { useState, useEffect } from "react";
 import { NextPage } from "next";
-import { useEffect, useState } from "react";
 
 type nftData = any[] | null;
 
@@ -18,6 +19,7 @@ const Marketplace: NextPage = () => {
   const [data, setData] = useState<nftData>(null);
 
   useEffect(() => {
+    //fetch nft data from API route
     const fetchNfts = async () => {
       const res = await fetch("/api/nftData");
       const data = await res.json();
@@ -28,7 +30,7 @@ const Marketplace: NextPage = () => {
   }, []);
 
   let containerClass;
-  if (displayMode === "dart") {
+  if (displayMode === "dark") {
     containerClass = "App";
   } else {
     containerClass = "App-lm";
@@ -40,25 +42,23 @@ const Marketplace: NextPage = () => {
         selectedComponent={selectedComponent}
         changeComponent={setSelectedComponent}
         displayMode={displayMode}
-      >
-        <div className="container">
-          <Header displayMode={displayMode} setDisplayMode={setDisplayMode}>
-            {selectedComponent === "Dashboard" && (
-              <Dashboard displayMode={displayMode} data={data} />
-            )}
-            {selectedComponent === "Bid" && <Bid displayMode={displayMode} />}
-            {selectedComponent === "Collection" && (
-              <Collection displayMode={displayMode} />
-            )}
-            {selectedComponent === "Profile" && (
-              <Profile displayMode={displayMode} />
-            )}
-            {selectedComponent === "Settings" && (
-              <Settings displayMode={displayMode} />
-            )}
-          </Header>
-        </div>
-      </Sidebar>
+      />
+      <div className="container">
+        <Header displayMode={displayMode} setDisplayMode={setDisplayMode} />
+        {selectedComponent === "Dashboard" && (
+          <Dashboard displayMode={displayMode} data={data} />
+        )}
+        {selectedComponent === "Bid" && <Bid displayMode={displayMode} />}
+        {selectedComponent === "Collection" && (
+          <Collection displayMode={displayMode} />
+        )}
+        {selectedComponent === "Profile" && (
+          <Profile displayMode={displayMode} />
+        )}
+        {selectedComponent === "Settings" && (
+          <Settings displayMode={displayMode} />
+        )}
+      </div>
     </div>
   );
 };

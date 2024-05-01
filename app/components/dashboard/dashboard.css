@@ -41,3 +41,101 @@ button {
 .discover#explore {
     border-radius: 21px;
 }
+
+.disc--title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+}
+
+.disc--title-lm {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+#desc {
+    margin-top: .625rem;
+    margin-bottom: 1.75rem;
+    color: rgba(212, 203, 243, 0.75);
+}
+
+.discover .disc--title,.discover .disc--title-lm, .discover .button--container {
+    width: 17.875rem;
+}
+
+#discover, #create {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;    
+}
+
+#create {
+    background-color: #DC3546;
+}
+
+.featured {
+    display: flex;
+    background: #1D1932;
+    padding: 1.25rem;
+    gap: 1.25rem;
+}
+
+.featured-lm {
+    display: flex;
+    background: #FFFFFF;
+    padding: 1.25rem;
+    gap: 1.25rem;
+    color: #000;
+}
+
+#featured {
+    height: 11.688rem;
+}
+
+.ft--container {
+    display: flex;
+    flex-direction: column;
+    width: 17.813rem;
+    height: 11.688rem;
+}
+
+.ft--user-container {
+    display: flex;
+    gap: .813rem;
+    align-items: center;
+    margin-bottom: .926rem;
+}
+
+#status {
+    height: .313rem;
+    width: .313rem;
+    background: #50BA23;
+    border-radius: 10px;
+}
+
+.ft--title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px; 
+    margin-bottom: .563rem;
+}
+
+.ft--auction {
+    display: flex;
+
+    font-size: 14px;
+    line-height: 21px;
+}
+
+#current-bid {
+    display: flex;
+    margin-left: auto;
+    gap: .313rem;
+}
+
+.ft--container .vals {
+    margin-bottom: 1rem;
+}

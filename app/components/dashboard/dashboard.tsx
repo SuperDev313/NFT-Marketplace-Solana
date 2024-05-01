@@ -14,6 +14,20 @@ const Dashboard = ({
   displayMode: string;
   data: nftData;
 }) => {
+  let featuredClass;
+  let contContainerClass;
+  let discTitleClass;
+
+  if (displayMode === "dark") {
+    featuredClass = "featured";
+    contContainerClass = "cont--container";
+    discTitleClass = "disc--title";
+  } else {
+    featuredClass = "featured-lm";
+    contContainerClass = "cont--container-lm";
+    discTitleClass = "disc--title-lm";
+  }
+
   return (
     <main className={contContainerClass}>
       <div className="discover--container">

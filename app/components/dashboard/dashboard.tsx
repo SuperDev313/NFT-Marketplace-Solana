@@ -1,3 +1,4 @@
+import "./dashboard.css";
 import Trending from "../trending/trending";
 import Featured from "./images/Featured.svg";
 import Avatar from "./images/Avatar.svg";
@@ -28,6 +29,33 @@ const Dashboard = ({
             <button id="create">Create</button>
           </div>
         </div>
+        <div id="explore" className={featuredClass}>
+                    <Image id="featured" src={Featured} alt="featured"/>
+                    <div className="ft--container">
+                        <div className="ft--user-container">
+                            <Image src={Avatar} alt="avatar"/>
+                            <div>John Abraham</div>
+                            <div id="status"></div>
+                        </div>
+                        <div className="ft--title">Brighten LQ</div>
+                        <div className="ft--auction">
+                            <div>Auction time</div>
+                            <div id="current-bid">
+                                <div>Current Bid</div>
+                                <div>:</div>
+                                <div id="bid">1.50 SOL</div>
+                            </div>
+                        </div>
+                        <div className="vals">
+                            <div>3h 1m 50s</div>
+                            <div>20 SOL</div>
+                        </div>
+                        <div className="button--container">
+                            <button id="place-bid">Place a Bid</button>
+                            <button id="details">Details</button>
+                        </div>
+                    </div>
+                </div>
       </div>
     </main>
   );
